@@ -12,17 +12,27 @@ import urllib.request
 
 @click.command()
 @click.argument('input_filepath', type=click.Path(exists=True))
+@click.argument('interim_filepath', type=click.Path())
 @click.argument('output_filepath', type=click.Path())
-def main(input_filepath, output_filepath):
+def main(input_filepath, interim_filepath, output_filepath):
     """ Runs data processing scripts to turn raw data from (../raw) into
         cleaned data ready to be analyzed (saved in ../processed).
     """
     logger = logging.getLogger(__name__)
 
+    # downloads CSVs to data/raw
     download_match_data(input_filepath)
-    standardise_data_format(input_filepath, output_filepath)
 
-    logger.info("Downloaded and standardised data format")
+    # generates data/interim/matches_raw.csv
+    standardise_data_format(input_filepath, interim_filepath)
+
+    # generates data/interim/matches_imputed_missing.csv
+    impute_missing_values(interim_filepath)
+
+    # generates data/interim/matches_corrected.csv
+    correct_data_entry_mistakes(interim_filepath)
+
+    logger.info("Downloaded and processed data")
 
 
 def download_match_data(download_directory, leagues=["E"],
@@ -53,7 +63,7 @@ def download_match_data(download_directory, leagues=["E"],
                     logger.info("Downloaded file: {}".format(filename))
 
 
-def standardise_data_format(download_directory, processed_directory,
+def standardise_data_format(download_directory, interim_filepath,
                             leagues=["E"], seasons=range(2000, 2021),
                             divisions=range(2)):
     """ Combines all matches in to single CSV with human readable column names
@@ -61,7 +71,7 @@ def standardise_data_format(download_directory, processed_directory,
     """
     logger = logging.getLogger(__name__)
     logger.info("Standardising data...")
-    # Data files have some variation in columns
+    # Data files have slight mixture of columns used
     #  so specify which ones we want to use
     usecols = ["Date", "HomeTeam", "AwayTeam", "FTR",
                "FTHG", "HS", "HST", "HC", "HF", "HY", "HR",
@@ -119,18 +129,18 @@ def standardise_data_format(download_directory, processed_directory,
                 elif season == 2017 and division == 1:
                     date_format = "%d/%m/%y"
 
-                # Read file
+                logger.info("Loading: {}".format(filename))
                 filename = "{}/{}-{}{}.csv".format(download_directory, season,
                                                    league, division)
-                logger.info("Loading: {}".format(filename))
                 df = pd.read_csv(filename, usecols=usecols)
+
                 # Drop empty rows (e.g. at the end of the file)
                 df.dropna(how="all", inplace=True)
 
                 # Make existing columns human readable
                 df.rename(columns=rename_columns, inplace=True)
 
-                # Reformat date
+                # Standardise date fromat
                 df["date"] = df["date"].apply(
                     lambda x: datetime.datetime.strptime(x, date_format).date()
                 )
@@ -147,8 +157,67 @@ def standardise_data_format(download_directory, processed_directory,
     matches.sort_values(by="date", ignore_index=True, inplace=True)
 
     # Save formatted raw match data in one file
-    matches.to_csv("{}/matches_raw.csv".format(processed_directory),
+    matches.to_csv("{}/matches_raw.csv".format(interim_filepath),
                    index=False)
+
+
+def impute_missing_values(interim_filepath):
+    """ Use medians of all previous values from same division
+         with same number of home goals and away goals
+    """
+    logger = logging.getLogger(__name__)
+    logger.info("Imputing missing values...")
+
+    matches = pd.read_csv("{}/matches_raw.csv".format(interim_filepath))
+
+    numeric_features = matches.dtypes[matches.dtypes != "object"].index
+    features_to_exclude_from_imputing = [
+        "league",
+        "season",
+        "division",
+        "home_goals",
+        "away_goals",
+        "odds_interwetten_homeWin",
+        "odds_interwetten_draw",
+        "odds_interwetten_awayWin",
+        "odds_williamHill_homeWin",
+        "odds_williamHill_draw",
+        "odds_williamHill_awayWin"
+    ]
+
+    for feature in numeric_features:
+        if feature not in features_to_exclude_from_imputing:
+
+            groupby_cols = ["league", "division", "home_goals", "away_goals"]
+            matches[feature] = matches.groupby(groupby_cols)[feature].\
+                transform(lambda x: x.fillna(x.shift(1).expanding().median()))
+
+    # Save matches with imputed values
+    matches.to_csv("{}/matches_imputed_missing.csv".format(interim_filepath),
+                   index=False)
+    logger.info("Completed imputing missing values!")
+
+
+def correct_data_entry_mistakes(interim_filepath):
+    """ Add 10 to shots where the shots are less than shots on target
+        These were most likely data entry mistakes with a missing 1
+    """
+    logger = logging.getLogger(__name__)
+    logger.info("Correcting data entry mistakes...")
+
+    matches = pd.read_csv("{}/matches_imputed_missing.csv".format(
+        interim_filepath))
+
+    matches.loc[matches["home_shotsOnTarget"] > matches["home_shots"],
+                "home_shots"] += 10
+    matches.loc[matches["away_shotsOnTarget"] > matches["away_shots"],
+                "away_shots"] += 10
+
+    # Save matches with corrected values
+    matches.to_csv("{}/matches_corrected.csv".format(interim_filepath),
+                   index=False)
+
+    logger.info("Completed correcting data entry mistakes!")
 
 
 if __name__ == '__main__':
