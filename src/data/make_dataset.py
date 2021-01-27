@@ -22,7 +22,7 @@ def main(input_filepath, output_filepath):
     download_match_data(input_filepath)
     standardise_data_format(input_filepath, output_filepath)
 
-    logger.info('making final data set from raw data')
+    logger.info("Downloaded and standardised data format")
 
 
 def download_match_data(download_directory, leagues=["E"],
