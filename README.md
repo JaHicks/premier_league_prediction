@@ -8,6 +8,8 @@ Some key aims of the project are:
 * to generate a combined dataset of both premier league and championship matches such that the championship matches are equivalent to premier league matches.  This will be achieved by transforming the match features (goals, shots, etc.) based on how promoted and relegated teams have performed in both leagues
 * to use the combined dataset for training premier league match prediction models
 
+The project working is presented in the notebooks which are best viewed on [nbviewer](https://nbviewer.jupyter.org/github/JaHicks/premier_league_prediction/tree/main/notebooks/)
+
 Project Organization
 ------------
 
