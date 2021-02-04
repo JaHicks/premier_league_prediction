@@ -25,9 +25,13 @@ requirements: test_environment
 	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
 	$(PYTHON_INTERPRETER) -m pip install -r requirements.txt
 
-## Make Dataset
+## Download data, initial data cleaning, and formatting
 data: requirements
-	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/interim data/processed
+	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/interim
+
+## Train championship transformation models (to bring feature values inline with premier league values)
+train_championship_transformation:
+	$(PYTHON_INTERPRETER) src/models/train_championship_transformation.py data/interim models
 
 ## Delete all compiled Python files
 clean:
