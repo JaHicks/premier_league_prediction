@@ -1,7 +1,12 @@
 premier_league_prediction
 ==============================
 
-Project for predicting premier league football scores
+Project for predicting premier league football scores.  This is primarily a fun project for me to practice my skills, but I hope it can also be useful to someone else.  Please let me know if you notice any issues, or if you have suggestions for improvements.
+
+Some key aims of the project are:
+* to download, format and clean historic match data from football-data.co.uk
+* to generate a combined dataset of both premier league and championship matches such that the championship matches are equivalent to premier league matches.  This will be achieved by transforming the match features (goals, shots, etc.) based on how promoted and relegated teams have performed in both leagues
+* to use the combined dataset for training premier league match prediction models
 
 Project Organization
 ------------
