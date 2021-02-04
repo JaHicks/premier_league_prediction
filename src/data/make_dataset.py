@@ -4,7 +4,7 @@ import logging
 from pathlib import Path
 from dotenv import find_dotenv, load_dotenv
 
-import datetime
+from datetime import datetime
 import pandas as pd
 import shutil
 import urllib.request
@@ -13,24 +13,28 @@ import urllib.request
 @click.command()
 @click.argument('input_filepath', type=click.Path(exists=True))
 @click.argument('interim_filepath', type=click.Path())
-@click.argument('output_filepath', type=click.Path())
-def main(input_filepath, interim_filepath, output_filepath):
-    """ Runs data processing scripts to turn raw data from (../raw) into
-        cleaned data ready to be analyzed (saved in ../processed).
+def main(input_filepath, interim_filepath):
+    """ Runs data processing scripts to download raw data and process it
+         with interim steps saved along the way.
     """
     logger = logging.getLogger(__name__)
+
+    # TODO: number the interim files so the order is clearer
 
     # downloads CSVs to data/raw
     download_match_data(input_filepath)
 
-    # generates data/interim/matches_raw.csv
+    # generates {interim_filepath}/matches_raw.csv
     standardise_data_format(input_filepath, interim_filepath)
 
-    # generates data/interim/matches_imputed_missing.csv
+    # generates {interim_filepath}/matches_imputed_missing.csv
     impute_missing_values(interim_filepath)
 
-    # generates data/interim/matches_corrected.csv
+    # generates {interim_filepath}/matches_corrected.csv
     correct_data_entry_mistakes(interim_filepath)
+
+    # generates {interim_filepath}/matches_expanded_features.csv
+    expand_for_against_values(interim_filepath)
 
     logger.info("Downloaded and processed data")
 
@@ -112,26 +116,10 @@ def standardise_data_format(download_directory, interim_filepath,
 
     for league in leagues:
         for season in seasons:
-            # Different date formats are used in some files
-            # (e.g. 2017 may be written as 17 or 2017)
-            if season < 2017:
-                date_format = "%d/%m/%y"
-            elif season >= 2017:
-                date_format = "%d/%m/%Y"
             for division in divisions:
-                # Specific files with different date formats
-                if season == 2002 and division == 0:
-                    date_format = "%d/%m/%Y"
-                elif season == 2002 and division == 1:
-                    date_format = "%d/%m/%y"
-                elif season == 2017 and division == 0:
-                    date_format = "%d/%m/%Y"
-                elif season == 2017 and division == 1:
-                    date_format = "%d/%m/%y"
-
-                logger.info("Loading: {}".format(filename))
                 filename = "{}/{}-{}{}.csv".format(download_directory, season,
                                                    league, division)
+                logger.info("Loading: {}".format(filename))
                 df = pd.read_csv(filename, usecols=usecols)
 
                 # Drop empty rows (e.g. at the end of the file)
@@ -141,14 +129,27 @@ def standardise_data_format(download_directory, interim_filepath,
                 df.rename(columns=rename_columns, inplace=True)
 
                 # Standardise date fromat
-                df["date"] = df["date"].apply(
-                    lambda x: datetime.datetime.strptime(x, date_format).date()
-                )
+                # Files have mixture of 2 different date formats, so try one
+                #  then use the other if the first fails
+                try:
+                    date_format = "%d/%m/%y"
+                    df["date"] = df["date"].apply(
+                        lambda x: datetime.strptime(x, date_format).date())
+                except ValueError:
+                    date_format = "%d/%m/%Y"
+                    df["date"] = df["date"].apply(
+                        lambda x: datetime.strptime(x, date_format).date())
 
                 # Retain data about league, season and division
                 df["league"] = league  # "E" for English
                 df["season"] = season  # year of start of season
-                df["division"] = division  # 0 for top, 1 for division below...
+                if division == 0:
+                    df["division"] = "premier"
+                elif division == 1:
+                    df["division"] = "championship"
+                else:
+                    # Fallback if using more than the first 2 divisions
+                    df["division"] = "div_{}".format(division)
 
                 # Append to single dataframe containing all matches
                 matches = matches.append(df, ignore_index=True)
@@ -157,8 +158,9 @@ def standardise_data_format(download_directory, interim_filepath,
     matches.sort_values(by="date", ignore_index=True, inplace=True)
 
     # Save formatted raw match data in one file
-    matches.to_csv("{}/matches_raw.csv".format(interim_filepath),
-                   index=False)
+    filename = "{}/matches_raw.csv".format(interim_filepath)
+    matches.to_csv(filename, index=False)
+    logger.info("Saved file: {}".format(filename))
 
 
 def impute_missing_values(interim_filepath):
@@ -193,8 +195,10 @@ def impute_missing_values(interim_filepath):
                 transform(lambda x: x.fillna(x.shift(1).expanding().median()))
 
     # Save matches with imputed values
-    matches.to_csv("{}/matches_imputed_missing.csv".format(interim_filepath),
-                   index=False)
+    filename = "{}/matches_imputed_missing.csv".format(interim_filepath)
+    matches.to_csv(filename, index=False)
+    logger.info("Saved file: {}".format(filename))
+
     logger.info("Completed imputing missing values!")
 
 
@@ -214,10 +218,48 @@ def correct_data_entry_mistakes(interim_filepath):
                 "away_shots"] += 10
 
     # Save matches with corrected values
-    matches.to_csv("{}/matches_corrected.csv".format(interim_filepath),
-                   index=False)
+    filename = "{}/matches_corrected.csv".format(interim_filepath)
+    matches.to_csv(filename, index=False)
+    logger.info("Saved file: {}".format(filename))
 
     logger.info("Completed correcting data entry mistakes!")
+
+
+def expand_for_against_values(interim_filepath):
+    """ Create for/against features (makes manipulation easier later) - e.g.
+         home_goals => home_goals_for = away_goals_against
+         away_goals => away_goals_for = home_goals_against
+    """
+    logger = logging.getLogger(__name__)
+    logger.info("Expanding for and against features...")
+
+    matches = pd.read_csv("{}/matches_corrected.csv".format(
+        interim_filepath))
+
+    feature_bases = ["goals", "shots", "shotsOnTarget", "corners", "fouls",
+                     "yellowCards", "redCards"]
+    for feature_base in feature_bases:
+        home_feature = "home_{}".format(feature_base)
+        away_feature = "away_{}".format(feature_base)
+
+        home_for_feature = "{}_for".format(home_feature)
+        home_against_feature = "{}_against".format(home_feature)
+        away_for_feature = "{}_for".format(away_feature)
+        away_against_feature = "{}_against".format(away_feature)
+
+        matches[home_for_feature] = matches[home_feature]
+        matches[home_against_feature] = matches[away_feature]
+        matches[away_for_feature] = matches[away_feature]
+        matches[away_against_feature] = matches[home_feature]
+
+        matches.drop(columns=[home_feature, away_feature], inplace=True)
+
+    # Save matches with for and against values
+    filename = "{}/matches_expanded_features.csv".format(interim_filepath)
+    matches.to_csv(filename, index=False)
+    logger.info("Saved file: {}".format(filename))
+
+    logger.info("Expanded for and against features!")
 
 
 if __name__ == '__main__':
