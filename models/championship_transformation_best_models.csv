@@ -1,0 +1,533 @@
+target_variable,season,model_name,training_sample,weighting_column,parameters,intercept,coefficient
+away_corners_against_mean_premier,2002,Baseline,Promoted,unweighted,{},6.087719298245614,0.0
+away_corners_against_mean_premier,2003,Ridge,Promoted,unweighted,{'alpha': 0.0001},4.677310905596146,0.3030820782998569
+away_corners_against_mean_premier,2004,Baseline,Promoted,unweighted,{},6.52046783625731,0.0
+away_corners_against_mean_premier,2005,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 1000.0},6.835578686664044,0.00861931528301
+away_corners_against_mean_premier,2006,Baseline,Promoted,unweighted,{},6.578947368421054,0.0
+away_corners_against_mean_premier,2007,Baseline,Promoted,unweighted,{},6.590643274853801,0.0
+away_corners_against_mean_premier,2008,Baseline,Promoted,unweighted,{},6.55388471177945,0.0
+away_corners_against_mean_premier,2009,Baseline,Promoted,unweighted,{},6.614035087719298,0.0
+away_corners_against_mean_premier,2010,Baseline,Promoted,unweighted,{},6.588693957115009,0.0
+away_corners_against_mean_premier,2011,Baseline,Promoted,unweighted,{},6.564912280701752,0.0
+away_corners_against_mean_premier,2012,Baseline,Promoted,unweighted,{},6.647527910685805,0.0
+away_corners_against_mean_premier,2013,Baseline,Promoted,unweighted,{},6.659356725146199,0.0
+away_corners_against_mean_premier,2014,Baseline,Promoted,unweighted,{},6.705802968960864,0.0
+away_corners_against_mean_premier,2015,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},7.24018050375282,0.0
+away_corners_against_mean_premier,2016,Baseline,Promoted,unweighted,{},6.71812865497076,0.0
+away_corners_against_mean_premier,2017,Baseline,Promoted,unweighted,{},6.735745614035086,0.0
+away_corners_against_mean_premier,2018,Baseline,Promoted,unweighted,{},6.735810113519092,0.0
+away_corners_against_mean_premier,2019,Baseline,Promoted,unweighted,{},6.7270955165692,0.0
+away_corners_against_mean_premier,2020,Baseline,Promoted,unweighted,{},6.749769159741459,0.0
+away_corners_for_mean_premier,2002,Baseline,Promoted,unweighted,{},5.2105263157894735,0.0
+away_corners_for_mean_premier,2003,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.021911637325604,0.8512878589778862
+away_corners_for_mean_premier,2004,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'mean'},4.341881308834348,0.0
+away_corners_for_mean_premier,2005,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},4.407894736842105,0.0
+away_corners_for_mean_premier,2006,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},4.433333333333333,0.0
+away_corners_for_mean_premier,2007,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},4.6001113895850745,0.0
+away_corners_for_mean_premier,2008,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},4.419799498746867,0.0
+away_corners_for_mean_premier,2009,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},4.4660087719298245,0.0
+away_corners_for_mean_premier,2010,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},4.48148148148148,0.0
+away_corners_for_mean_premier,2011,Baseline,Promoted,unweighted,{},4.656140350877193,0.0
+away_corners_for_mean_premier,2012,Baseline,Promoted,unweighted,{},4.673046251993621,0.0
+away_corners_for_mean_premier,2013,Baseline,Promoted,unweighted,{},4.679824561403509,0.0
+away_corners_for_mean_premier,2014,Baseline,Promoted,unweighted,{},4.624831309041836,0.0
+away_corners_for_mean_premier,2015,Baseline,Promoted,unweighted,{},4.6152882205513786,0.0
+away_corners_for_mean_premier,2016,Average,Promoted & Relegated,4_season_half_life_weight,{'strategy': 'mean'},4.38333955293559,0.0
+away_corners_for_mean_premier,2017,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'mean'},4.242549979943569,0.0
+away_corners_for_mean_premier,2018,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},4.040679037355808,0.0
+away_corners_for_mean_premier,2019,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},3.7922683956279126,0.0
+away_corners_for_mean_premier,2020,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'mean'},3.960063609952821,0.0
+away_fouls_against_mean_premier,2002,Baseline,Promoted,unweighted,{},13.14035087719298,0.0
+away_fouls_against_mean_premier,2003,Baseline,Promoted,unweighted,{},12.859649122807015,0.0
+away_fouls_against_mean_premier,2004,Ridge,Promoted & Relegated,unweighted,{'alpha': 10.0},12.989949798471065,-0.0309044019701992
+away_fouls_against_mean_premier,2005,Ridge,Promoted & Relegated,unweighted,{'alpha': 10.0},12.688946731523044,-0.0162762824970778
+away_fouls_against_mean_premier,2006,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 10.0},14.101880304427784,-0.1505988392167588
+away_fouls_against_mean_premier,2007,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 1000.0},11.805737108346756,0.0336146669470795
+away_fouls_against_mean_premier,2008,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},11.105263157894736,0.0
+away_fouls_against_mean_premier,2009,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},11.31578947368421,0.0
+away_fouls_against_mean_premier,2010,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},11.31578947368421,0.0
+away_fouls_against_mean_premier,2011,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},11.157894736842104,0.0
+away_fouls_against_mean_premier,2012,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},10.947368421052632,0.0
+away_fouls_against_mean_premier,2013,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},4.097170855550112,0.595719872166482
+away_fouls_against_mean_premier,2014,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},4.661003722432919,0.522091431564305
+away_fouls_against_mean_premier,2015,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},10.526315789473683,0.0
+away_fouls_against_mean_premier,2016,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},9.894736842105264,0.0
+away_fouls_against_mean_premier,2017,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},10.263157894736842,0.0
+away_fouls_against_mean_premier,2018,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},10.157894736842104,0.0
+away_fouls_against_mean_premier,2019,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},9.894736842105264,0.0
+away_fouls_against_mean_premier,2020,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 10.0},1.5938159236322775,0.7300806335024088
+away_fouls_for_mean_premier,2002,Baseline,Promoted,unweighted,{},14.31578947368421,0.0
+away_fouls_for_mean_premier,2003,Baseline,Promoted,unweighted,{},13.570175438596491,0.0
+away_fouls_for_mean_premier,2004,Baseline,Promoted,unweighted,{},13.707602339181284,0.0
+away_fouls_for_mean_premier,2005,Baseline,Promoted,unweighted,{},13.714912280701755,0.0
+away_fouls_for_mean_premier,2006,Baseline,Promoted,unweighted,{},13.757894736842106,0.0
+away_fouls_for_mean_premier,2007,Baseline,Promoted,unweighted,{},13.605263157894736,0.0
+away_fouls_for_mean_premier,2008,Baseline,Promoted,unweighted,{},13.563909774436093,0.0
+away_fouls_for_mean_premier,2009,Baseline,Promoted,unweighted,{},13.497807017543858,0.0
+away_fouls_for_mean_premier,2010,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},3.3808571712605566,0.6992995441143738
+away_fouls_for_mean_premier,2011,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},2.323724829254157,0.7640747084341938
+away_fouls_for_mean_premier,2012,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},0.3604770535626294,0.9164766878336732
+away_fouls_for_mean_premier,2013,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},5.844463533095253,0.4577620617714286
+away_fouls_for_mean_premier,2014,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},10.243479514407865,0.0289581423129244
+away_fouls_for_mean_premier,2015,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},9.744420330227294,0.1193750554500327
+away_fouls_for_mean_premier,2016,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},9.049120499848332,0.2015517667170041
+away_fouls_for_mean_premier,2017,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},2.5525556687415616,0.8235395376390621
+away_fouls_for_mean_premier,2018,Ridge,Promoted,2_season_half_life_weight,{'alpha': 30.0},6.113584224090446,0.4609514703565938
+away_fouls_for_mean_premier,2019,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},14.099117429188963,-0.2501814608514264
+away_fouls_for_mean_premier,2020,Ridge,Promoted,1_season_half_life_weight,{'alpha': 300.0},14.004248321384896,-0.2503993317948956
+away_goals_against_mean_premier,2002,Baseline,Promoted,unweighted,{},1.5789473684210524,0.0
+away_goals_against_mean_premier,2003,Baseline,Promoted,unweighted,{},1.5350877192982455,0.0
+away_goals_against_mean_premier,2004,Baseline,Promoted,unweighted,{},1.6900584795321638,0.0
+away_goals_against_mean_premier,2005,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'median'},1.947368421052632,0.0
+away_goals_against_mean_premier,2006,Average,Promoted & Relegated,unweighted,{'strategy': 'median'},1.8421052631578947,0.0
+away_goals_against_mean_premier,2007,Baseline,Promoted,unweighted,{},1.7456140350877196,0.0
+away_goals_against_mean_premier,2008,Average,Promoted & Relegated,unweighted,{'strategy': 'median'},1.7894736842105263,0.0
+away_goals_against_mean_premier,2009,Average,Promoted & Relegated,unweighted,{'strategy': 'median'},1.8421052631578947,0.0
+away_goals_against_mean_premier,2010,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},1.394199785177228,0.4199785177228788
+away_goals_against_mean_premier,2011,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},1.2657975308879517,0.5421175293486654
+away_goals_against_mean_premier,2012,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},1.448802850261171,0.3939972038299356
+away_goals_against_mean_premier,2013,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},1.4445046021775767,0.3992813037756859
+away_goals_against_mean_premier,2014,Baseline,Promoted,unweighted,{},1.8448043184885292,0.0
+away_goals_against_mean_premier,2015,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},1.9367167919799504,0.0
+away_goals_against_mean_premier,2016,Baseline,Promoted,unweighted,{},1.8502923976608192,0.0
+away_goals_against_mean_premier,2017,Baseline,Promoted,unweighted,{},1.855263157894737,0.0
+away_goals_against_mean_premier,2018,Baseline,Promoted,unweighted,{},1.841073271413829,0.0
+away_goals_against_mean_premier,2019,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},1.4624935752347938,0.371592409478536
+away_goals_against_mean_premier,2020,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},1.477490074630283,0.3595788066781228
+away_goals_for_mean_premier,2002,Baseline,Promoted,unweighted,{},1.0701754385964912,0.0
+away_goals_for_mean_premier,2003,Baseline,Promoted,unweighted,{},0.9473684210526316,0.0
+away_goals_for_mean_premier,2004,Baseline,Promoted,unweighted,{},0.9590643274853802,0.0
+away_goals_for_mean_premier,2005,Baseline,Promoted,unweighted,{},0.9473684210526316,0.0
+away_goals_for_mean_premier,2006,Baseline,Promoted,unweighted,{},0.9578947368421052,0.0
+away_goals_for_mean_premier,2007,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},0.8757309941520469,0.0
+away_goals_for_mean_premier,2008,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},0.6988534327945848,0.0
+away_goals_for_mean_premier,2009,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'mean'},0.7781648566569448,0.0
+away_goals_for_mean_premier,2010,Baseline,Promoted,unweighted,{},0.8830409356725147,0.0
+away_goals_for_mean_premier,2011,Baseline,Promoted,unweighted,{},0.910526315789474,0.0
+away_goals_for_mean_premier,2012,Baseline,Promoted,unweighted,{},0.923444976076555,0.0
+away_goals_for_mean_premier,2013,Baseline,Promoted,unweighted,{},0.9254385964912282,0.0
+away_goals_for_mean_premier,2014,Baseline,Promoted,unweighted,{},0.9149797570850202,0.0
+away_goals_for_mean_premier,2015,Baseline,Promoted,unweighted,{},0.913533834586466,0.0
+away_goals_for_mean_premier,2016,Baseline,Promoted,unweighted,{},0.9169590643274852,0.0
+away_goals_for_mean_premier,2017,Baseline,Promoted,unweighted,{},0.8947368421052632,0.0
+away_goals_for_mean_premier,2018,Baseline,Promoted,unweighted,{},0.8833849329205365,0.0
+away_goals_for_mean_premier,2019,Baseline,Promoted,unweighted,{},0.8771929824561402,0.0
+away_goals_for_mean_premier,2020,Baseline,Promoted,unweighted,{},0.8688827331486612,0.0
+away_redCards_against_mean_premier,2002,Baseline,Promoted,unweighted,{},0.0701754385964912,0.0
+away_redCards_against_mean_premier,2003,Baseline,Promoted,unweighted,{},0.1052631578947368,0.0
+away_redCards_against_mean_premier,2004,Baseline,Promoted,unweighted,{},0.0818713450292397,0.0
+away_redCards_against_mean_premier,2005,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2006,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2007,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2008,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2009,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2010,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2011,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2012,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2013,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2014,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2015,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2016,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2017,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2018,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2019,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_against_mean_premier,2020,Average,Promoted,unweighted,{'strategy': 'median'},0.0526315789473684,0.0
+away_redCards_for_mean_premier,2002,Baseline,Promoted,unweighted,{},0.0701754385964912,0.0
+away_redCards_for_mean_premier,2003,Baseline,Promoted,unweighted,{},0.131578947368421,0.0
+away_redCards_for_mean_premier,2004,Ridge,Promoted,1_season_half_life_weight,{'alpha': 0.03},0.1033544073964967,0.6129866538155954
+away_redCards_for_mean_premier,2005,Baseline,Promoted,unweighted,{},0.1271929824561403,0.0
+away_redCards_for_mean_premier,2006,Baseline,Promoted,unweighted,{},0.1228070175438596,0.0
+away_redCards_for_mean_premier,2007,Baseline,Promoted,unweighted,{},0.1169590643274853,0.0
+away_redCards_for_mean_premier,2008,Baseline,Promoted,unweighted,{},0.1102756892230576,0.0
+away_redCards_for_mean_premier,2009,Baseline,Promoted,unweighted,{},0.1030701754385964,0.0
+away_redCards_for_mean_premier,2010,Baseline,Promoted,unweighted,{},0.1013645224171539,0.0
+away_redCards_for_mean_premier,2011,Baseline,Promoted,unweighted,{},0.1035087719298245,0.0
+away_redCards_for_mean_premier,2012,Baseline,Promoted,unweighted,{},0.1036682615629983,0.0
+away_redCards_for_mean_premier,2013,Baseline,Promoted,unweighted,{},0.0950292397660818,0.0
+away_redCards_for_mean_premier,2014,Baseline,Promoted,unweighted,{},0.0958164642375168,0.0
+away_redCards_for_mean_premier,2015,Baseline,Promoted,unweighted,{},0.0964912280701753,0.0
+away_redCards_for_mean_premier,2016,Baseline,Promoted,unweighted,{},0.0959064327485379,0.0
+away_redCards_for_mean_premier,2017,Baseline,Promoted,unweighted,{},0.0964912280701754,0.0
+away_redCards_for_mean_premier,2018,Baseline,Promoted,unweighted,{},0.0928792569659442,0.0
+away_redCards_for_mean_premier,2019,Baseline,Promoted,unweighted,{},0.0906432748538011,0.0
+away_redCards_for_mean_premier,2020,Baseline,Promoted,unweighted,{},0.0877192982456139,0.0
+away_shotsOnTarget_against_mean_premier,2002,Baseline,Promoted,unweighted,{},5.754385964912281,0.0
+away_shotsOnTarget_against_mean_premier,2003,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},6.813384410359844,0.0020956862154238
+away_shotsOnTarget_against_mean_premier,2004,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 1000.0},7.390600914237055,-0.0003866425969291
+away_shotsOnTarget_against_mean_premier,2005,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},7.985964912280703,0.0
+away_shotsOnTarget_against_mean_premier,2006,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 30.0},6.1722813101124405,0.3489575872053005
+away_shotsOnTarget_against_mean_premier,2007,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 30.0},7.448775517682018,0.0842348973325375
+away_shotsOnTarget_against_mean_premier,2008,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 30.0},6.774727925140127,0.1871356404085194
+away_shotsOnTarget_against_mean_premier,2009,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 10.0},5.6347285373213305,0.4507970994305827
+away_shotsOnTarget_against_mean_premier,2010,Ridge,Promoted,1_season_half_life_weight,{'alpha': 10.0},4.565799006154941,0.743316239640296
+away_shotsOnTarget_against_mean_premier,2011,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},8.592341067723071,0.0
+away_shotsOnTarget_against_mean_premier,2012,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},9.103437636592703,0.0
+away_shotsOnTarget_against_mean_premier,2013,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},9.196478375425745,0.0
+away_shotsOnTarget_against_mean_premier,2014,Baseline,Promoted,unweighted,{},7.928475033738189,0.0
+away_shotsOnTarget_against_mean_premier,2015,Ridge,Promoted & Relegated,unweighted,{'alpha': 3.0},4.99961929025414,0.5385737959237183
+away_shotsOnTarget_against_mean_premier,2016,Ridge,Promoted,1_season_half_life_weight,{'alpha': 10.0},1.660040291900896,0.8660516043432681
+away_shotsOnTarget_against_mean_premier,2017,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},1.5382916559253257,1.006168139186803
+away_shotsOnTarget_against_mean_premier,2018,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},1.2370473680324183,1.0512334567471429
+away_shotsOnTarget_against_mean_premier,2019,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},1.540352998230019,0.996824684593528
+away_shotsOnTarget_against_mean_premier,2020,Ridge,Promoted,1_season_half_life_weight,{'alpha': 10.0},2.6673665077845383,0.6323606282664258
+away_shotsOnTarget_for_mean_premier,2002,Baseline,Promoted,unweighted,{},4.140350877192982,0.0
+away_shotsOnTarget_for_mean_premier,2003,Ridge,Promoted,unweighted,{'alpha': 1.0},4.578197274659333,-0.0575071883985498
+away_shotsOnTarget_for_mean_premier,2004,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1.0},4.563555900162409,-0.0264523746063842
+away_shotsOnTarget_for_mean_premier,2005,Baseline,Promoted,unweighted,{},4.298245614035087,0.0
+away_shotsOnTarget_for_mean_premier,2006,Baseline,Promoted,unweighted,{},4.231578947368421,0.0
+away_shotsOnTarget_for_mean_premier,2007,Baseline,Promoted,unweighted,{},4.175438596491229,0.0
+away_shotsOnTarget_for_mean_premier,2008,Baseline,Promoted,unweighted,{},4.182957393483709,0.0
+away_shotsOnTarget_for_mean_premier,2009,Baseline,Promoted,unweighted,{},4.269736842105263,0.0
+away_shotsOnTarget_for_mean_premier,2010,Baseline,Promoted,unweighted,{},4.385964912280701,0.0
+away_shotsOnTarget_for_mean_premier,2011,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},5.270154859288985,0.0
+away_shotsOnTarget_for_mean_premier,2012,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},6.0,0.0
+away_shotsOnTarget_for_mean_premier,2013,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},5.60709465972624,0.0
+away_shotsOnTarget_for_mean_premier,2014,Baseline,Promoted,unweighted,{},4.60863697705803,0.0
+away_shotsOnTarget_for_mean_premier,2015,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},-0.1058876795543972,0.8074439128727211
+away_shotsOnTarget_for_mean_premier,2016,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},3.210526315789474,0.0
+away_shotsOnTarget_for_mean_premier,2017,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},0.8839816410224626,0.4890756594323751
+away_shotsOnTarget_for_mean_premier,2018,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},-0.0812081435413958,0.7372712485943147
+away_shotsOnTarget_for_mean_premier,2019,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},0.2072263640309279,0.7018179170907656
+away_shotsOnTarget_for_mean_premier,2020,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},1.7845391410408646,0.2993672735399718
+away_shots_against_mean_premier,2002,Baseline,Promoted,unweighted,{},12.210526315789474,0.0
+away_shots_against_mean_premier,2003,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},13.28519483718135,0.0039270564624903
+away_shots_against_mean_premier,2004,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},13.535255319743468,-0.0008142938463563
+away_shots_against_mean_premier,2005,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 1000.0},14.507504357695897,0.0175366590500329
+away_shots_against_mean_premier,2006,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},14.11451560802828,0.0078499108943954
+away_shots_against_mean_premier,2007,Ridge,Promoted & Relegated,8_season_half_life_weight,{'alpha': 1000.0},14.189719362932662,0.0065721928009325
+away_shots_against_mean_premier,2008,Ridge,Promoted & Relegated,4_season_half_life_weight,{'alpha': 100.0},13.137424212244548,0.1113405708259653
+away_shots_against_mean_premier,2009,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 100.0},12.0057630285663,0.2593488156338823
+away_shots_against_mean_premier,2010,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 300.0},12.7552667612526,0.2436164430465584
+away_shots_against_mean_premier,2011,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 100.0},11.86092030280691,0.2938313980075863
+away_shots_against_mean_premier,2012,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 100.0},11.306045369737014,0.3726224435785933
+away_shots_against_mean_premier,2013,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 300.0},9.864013796812529,0.5265226744897864
+away_shots_against_mean_premier,2014,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 300.0},9.140132885516898,0.5896810839531389
+away_shots_against_mean_premier,2015,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 300.0},9.180507020370973,0.6257160901945824
+away_shots_against_mean_premier,2016,Ridge,Promoted & Relegated,4_season_half_life_weight,{'alpha': 1000.0},12.240911929265982,0.3047114318937396
+away_shots_against_mean_premier,2017,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 100.0},9.292354630453044,0.5467263748543463
+away_shots_against_mean_premier,2018,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 100.0},7.269970869649997,0.7016476607111897
+away_shots_against_mean_premier,2019,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 100.0},7.126584145281109,0.6963422719409419
+away_shots_against_mean_premier,2020,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 100.0},8.076023254271695,0.6165587241987395
+away_shots_for_mean_premier,2002,Baseline,Promoted,unweighted,{},9.105263157894736,0.0
+away_shots_for_mean_premier,2003,Ridge,Promoted,unweighted,{'alpha': 30.0},8.921746869332287,0.0128313024252135
+away_shots_for_mean_premier,2004,Average,Promoted,unweighted,{'strategy': 'median'},8.947368421052632,0.0
+away_shots_for_mean_premier,2005,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},8.5,0.0
+away_shots_for_mean_premier,2006,Ridge,Promoted & Relegated,unweighted,{'alpha': 30.0},6.177538518252655,0.2167317096650346
+away_shots_for_mean_premier,2007,Ridge,Promoted & Relegated,unweighted,{'alpha': 30.0},7.075138229819736,0.1222809364786694
+away_shots_for_mean_premier,2008,Ridge,Promoted & Relegated,unweighted,{'alpha': 30.0},6.9412146703712425,0.1313233749440247
+away_shots_for_mean_premier,2009,Ridge,Promoted,1_season_half_life_weight,{'alpha': 3.0},-1.3515221803905817,0.9652095856985
+away_shots_for_mean_premier,2010,Ridge,Promoted,unweighted,{'alpha': 1.0},4.750953071002944,0.3807620380938402
+away_shots_for_mean_premier,2011,Ridge,Promoted,1_season_half_life_weight,{'alpha': 3.0},-0.9344727431157428,0.9955016107229218
+away_shots_for_mean_premier,2012,Ridge,Promoted,1_season_half_life_weight,{'alpha': 3.0},1.2931907941360148,0.852194765116859
+away_shots_for_mean_premier,2013,Ridge,Promoted,1_season_half_life_weight,{'alpha': 3.0},5.396337964025816,0.4880202770080689
+away_shots_for_mean_premier,2014,Ridge,Promoted,1_season_half_life_weight,{'alpha': 3.0},5.255663179481819,0.4990368262018557
+away_shots_for_mean_premier,2015,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},10.424981608021152,0.0
+away_shots_for_mean_premier,2016,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},10.46687804750072,0.0
+away_shots_for_mean_premier,2017,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},9.724655768512608,0.0
+away_shots_for_mean_premier,2018,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},9.634257019129985,0.0
+away_shots_for_mean_premier,2019,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},9.843445097027864,0.0
+away_shots_for_mean_premier,2020,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},9.711195980479287,0.0
+away_yellowCards_against_mean_premier,2002,Baseline,Promoted,unweighted,{},1.2631578947368418,0.0
+away_yellowCards_against_mean_premier,2003,Baseline,Promoted,unweighted,{},1.3245614035087718,0.0
+away_yellowCards_against_mean_premier,2004,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},0.8479652395193462,0.3026225615885606
+away_yellowCards_against_mean_premier,2005,Baseline,Promoted,unweighted,{},1.1973684210526316,0.0
+away_yellowCards_against_mean_premier,2006,Baseline,Promoted,unweighted,{},1.2105263157894737,0.0
+away_yellowCards_against_mean_premier,2007,Baseline,Promoted,unweighted,{},1.2222222222222223,0.0
+away_yellowCards_against_mean_premier,2008,Baseline,Promoted,unweighted,{},1.1954887218045112,0.0
+away_yellowCards_against_mean_premier,2009,Baseline,Promoted,unweighted,{},1.1929824561403508,0.0
+away_yellowCards_against_mean_premier,2010,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},0.9914264458601342,0.1361185771791652
+away_yellowCards_against_mean_premier,2011,Baseline,Promoted,unweighted,{},1.2122807017543855,0.0
+away_yellowCards_against_mean_premier,2012,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},1.0609818177400858,0.1040880460620001
+away_yellowCards_against_mean_premier,2013,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},1.0255194141396524,0.12735794567735
+away_yellowCards_against_mean_premier,2014,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},1.0057289213407672,0.1492648910571516
+away_yellowCards_against_mean_premier,2015,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},0.9854507336649015,0.1658707219152645
+away_yellowCards_against_mean_premier,2016,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},1.0272904704415116,0.1421778248655181
+away_yellowCards_against_mean_premier,2017,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},1.0499339844266031,0.1264588753014299
+away_yellowCards_against_mean_premier,2018,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},0.9872689719190166,0.1738851872675753
+away_yellowCards_against_mean_premier,2019,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},1.007060392274179,0.1625465556900579
+away_yellowCards_against_mean_premier,2020,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},0.9364101098413772,0.2146246623023585
+away_yellowCards_for_mean_premier,2002,Baseline,Promoted,unweighted,{},1.649122807017544,0.0
+away_yellowCards_for_mean_premier,2003,Baseline,Promoted,unweighted,{},1.7280701754385963,0.0
+away_yellowCards_for_mean_premier,2004,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'mean'},1.7985280660957597,0.0
+away_yellowCards_for_mean_premier,2005,Baseline,Promoted,unweighted,{},1.618421052631579,0.0
+away_yellowCards_for_mean_premier,2006,Baseline,Promoted,unweighted,{},1.6350877192982458,0.0
+away_yellowCards_for_mean_premier,2007,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},1.589668615984406,0.0
+away_yellowCards_for_mean_premier,2008,Baseline,Promoted,unweighted,{},1.6616541353383458,0.0
+away_yellowCards_for_mean_premier,2009,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},1.1190261241592063,0.3392016691398674
+away_yellowCards_for_mean_premier,2010,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 3.0},1.986647330347704,-0.1007380990580183
+away_yellowCards_for_mean_premier,2011,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 3.0},2.117524464449008,-0.1764315760388704
+away_yellowCards_for_mean_premier,2012,Baseline,Promoted,unweighted,{},1.685805422647528,0.0
+away_yellowCards_for_mean_premier,2013,Baseline,Promoted,unweighted,{},1.679824561403509,0.0
+away_yellowCards_for_mean_premier,2014,Baseline,Promoted,unweighted,{},1.666666666666667,0.0
+away_yellowCards_for_mean_premier,2015,Baseline,Promoted,unweighted,{},1.6716791979949872,0.0
+away_yellowCards_for_mean_premier,2016,Baseline,Promoted,unweighted,{},1.6713450292397658,0.0
+away_yellowCards_for_mean_premier,2017,Baseline,Promoted,unweighted,{},1.6798245614035088,0.0
+away_yellowCards_for_mean_premier,2018,Baseline,Promoted,unweighted,{},1.6646026831785343,0.0
+away_yellowCards_for_mean_premier,2019,Baseline,Promoted,unweighted,{},1.6744639376218322,0.0
+away_yellowCards_for_mean_premier,2020,Baseline,Promoted,unweighted,{},1.6814404432132966,0.0
+home_corners_against_mean_premier,2002,Baseline,Promoted,unweighted,{},4.561403508771931,0.0
+home_corners_against_mean_premier,2003,Baseline,Promoted,unweighted,{},4.9035087719298245,0.0
+home_corners_against_mean_premier,2004,Average,Promoted & Relegated,16_season_half_life_weight,{'strategy': 'median'},5.631578947368421,0.0
+home_corners_against_mean_premier,2005,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 1000.0},5.417482397412322,0.0118774580872055
+home_corners_against_mean_premier,2006,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},5.366304892065043,0.0042901372387113
+home_corners_against_mean_premier,2007,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 100.0},3.557108032007341,0.3287589297034357
+home_corners_against_mean_premier,2008,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 100.0},3.283788160554276,0.4252103238758644
+home_corners_against_mean_premier,2009,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 100.0},3.891614477634952,0.2819285182833931
+home_corners_against_mean_premier,2010,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 100.0},4.1488993662988936,0.242471714164993
+home_corners_against_mean_premier,2011,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 100.0},2.637902616174536,0.5893352909596515
+home_corners_against_mean_premier,2012,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 100.0},2.865597575788076,0.6130644805709541
+home_corners_against_mean_premier,2013,Ridge,Promoted & Relegated,8_season_half_life_weight,{'alpha': 30.0},4.3532006138968535,0.2362010861037785
+home_corners_against_mean_premier,2014,Ridge,Promoted & Relegated,unweighted,{'alpha': 30.0},4.557593010313664,0.1846322437534445
+home_corners_against_mean_premier,2015,Ridge,Promoted & Relegated,unweighted,{'alpha': 100.0},4.987888077631423,0.0914688252795139
+home_corners_against_mean_premier,2016,Baseline,Promoted,unweighted,{},5.1649122807017545,0.0
+home_corners_against_mean_premier,2017,Baseline,Promoted,unweighted,{},5.197368421052631,0.0
+home_corners_against_mean_premier,2018,Baseline,Promoted,unweighted,{},5.176470588235294,0.0
+home_corners_against_mean_premier,2019,Ridge,Promoted & Relegated,unweighted,{'alpha': 30.0},4.603348140989337,0.1668700981778796
+home_corners_against_mean_premier,2020,Ridge,Promoted & Relegated,unweighted,{'alpha': 30.0},4.59308262582855,0.1684167090523919
+home_corners_for_mean_premier,2002,Baseline,Promoted,unweighted,{},6.035087719298247,0.0
+home_corners_for_mean_premier,2003,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},2.871806451838044,0.4917823197573352
+home_corners_for_mean_premier,2004,Baseline,Promoted,unweighted,{},5.959064327485381,0.0
+home_corners_for_mean_premier,2005,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},5.7368421052631575,0.0
+home_corners_for_mean_premier,2006,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},5.315789473684211,0.0
+home_corners_for_mean_premier,2007,Baseline,Promoted,unweighted,{},5.868421052631579,0.0
+home_corners_for_mean_premier,2008,Baseline,Promoted,unweighted,{},5.799498746867167,0.0
+home_corners_for_mean_premier,2009,Baseline,Promoted,unweighted,{},5.7785087719298245,0.0
+home_corners_for_mean_premier,2010,Baseline,Promoted,unweighted,{},5.727095516569201,0.0
+home_corners_for_mean_premier,2011,Baseline,Promoted,unweighted,{},5.682456140350879,0.0
+home_corners_for_mean_premier,2012,Baseline,Promoted,unweighted,{},5.628389154704944,0.0
+home_corners_for_mean_premier,2013,Baseline,Promoted,unweighted,{},5.656432748538013,0.0
+home_corners_for_mean_premier,2014,Baseline,Promoted,unweighted,{},5.628879892037787,0.0
+home_corners_for_mean_premier,2015,Baseline,Promoted,unweighted,{},5.6077694235588975,0.0
+home_corners_for_mean_premier,2016,Baseline,Promoted,unweighted,{},5.622222222222222,0.0
+home_corners_for_mean_premier,2017,Ridge,Promoted,2_season_half_life_weight,{'alpha': 30.0},1.7048123389594028,0.5126457440369038
+home_corners_for_mean_premier,2018,Ridge,Promoted,2_season_half_life_weight,{'alpha': 30.0},3.1094976072052694,0.2950437477734291
+home_corners_for_mean_premier,2019,Baseline,Promoted,unweighted,{},5.490253411306042,0.0
+home_corners_for_mean_premier,2020,Baseline,Promoted,unweighted,{},5.51061865189289,0.0
+home_fouls_against_mean_premier,2002,Baseline,Promoted,unweighted,{},13.964912280701752,0.0
+home_fouls_against_mean_premier,2003,Baseline,Promoted,unweighted,{},13.359649122807015,0.0
+home_fouls_against_mean_premier,2004,Average,Promoted,unweighted,{'strategy': 'median'},12.68421052631579,0.0
+home_fouls_against_mean_premier,2005,Baseline,Promoted,unweighted,{},13.23684210526316,0.0
+home_fouls_against_mean_premier,2006,Baseline,Promoted,unweighted,{},12.887719298245615,0.0
+home_fouls_against_mean_premier,2007,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},11.724310776942357,0.0
+home_fouls_against_mean_premier,2008,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},11.651056775797764,0.0
+home_fouls_against_mean_premier,2009,Average,Promoted,1_season_half_life_weight,{'strategy': 'mean'},11.403508771929824,0.0
+home_fouls_against_mean_premier,2010,Average,Promoted,4_season_half_life_weight,{'strategy': 'median'},11.578947368421051,0.0
+home_fouls_against_mean_premier,2011,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},7.257625883162277,0.3570243206857756
+home_fouls_against_mean_premier,2012,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},3.649265839446149,0.6482811316389696
+home_fouls_against_mean_premier,2013,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},4.400333388426487,0.6060962845117008
+home_fouls_against_mean_premier,2014,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},6.989670484317325,0.3340321586822706
+home_fouls_against_mean_premier,2015,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},5.175582998094075,0.4755713631554979
+home_fouls_against_mean_premier,2016,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},5.302651387639468,0.4934398215487239
+home_fouls_against_mean_premier,2017,Ridge,Promoted,1_season_half_life_weight,{'alpha': 1000.0},7.258165205212747,0.3440135052772493
+home_fouls_against_mean_premier,2018,Ridge,Promoted,2_season_half_life_weight,{'alpha': 100.0},8.696236658065244,0.1616678241849192
+home_fouls_against_mean_premier,2019,Ridge,Promoted,2_season_half_life_weight,{'alpha': 100.0},6.812884019575027,0.303320856041444
+home_fouls_against_mean_premier,2020,Ridge,Promoted,2_season_half_life_weight,{'alpha': 100.0},3.488593228087148,0.5978781795343359
+home_fouls_for_mean_premier,2002,Baseline,Promoted,unweighted,{},13.192982456140353,0.0
+home_fouls_for_mean_premier,2003,Baseline,Promoted,unweighted,{},12.964912280701752,0.0
+home_fouls_for_mean_premier,2004,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},8.883797957668023,0.3571482051685703
+home_fouls_for_mean_premier,2005,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},9.275639278650385,0.3222368868715456
+home_fouls_for_mean_premier,2006,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},8.821633485596315,0.3397826091853687
+home_fouls_for_mean_premier,2007,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},7.171766006546616,0.4563543013276281
+home_fouls_for_mean_premier,2008,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},11.70841605839897,0.0751149612334869
+home_fouls_for_mean_premier,2009,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},10.02113981302278,0.2001059477949359
+home_fouls_for_mean_premier,2010,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},8.723748851968278,0.249333377915091
+home_fouls_for_mean_premier,2011,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},10.875553743614686,0.0732175759106667
+home_fouls_for_mean_premier,2012,Ridge,Promoted,1_season_half_life_weight,{'alpha': 10.0},5.320806901512038,0.4693297861792652
+home_fouls_for_mean_premier,2013,Ridge,Promoted,1_season_half_life_weight,{'alpha': 10.0},4.385750978677917,0.5610512626571961
+home_fouls_for_mean_premier,2014,Ridge,Promoted,1_season_half_life_weight,{'alpha': 10.0},6.538238453022455,0.3595865240579204
+home_fouls_for_mean_premier,2015,Ridge,Promoted,1_season_half_life_weight,{'alpha': 10.0},4.2631843339224975,0.6289424830297798
+home_fouls_for_mean_premier,2016,Ridge,Promoted,2_season_half_life_weight,{'alpha': 3.0},4.081297778981487,0.6216233288795078
+home_fouls_for_mean_premier,2017,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},11.052631578947368,0.0
+home_fouls_for_mean_premier,2018,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},10.894736842105264,0.0
+home_fouls_for_mean_premier,2019,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},10.421052631578949,0.0
+home_fouls_for_mean_premier,2020,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},10.421052631578949,0.0
+home_goals_against_mean_premier,2002,Baseline,Promoted,unweighted,{},1.175438596491228,0.0
+home_goals_against_mean_premier,2003,Baseline,Promoted,unweighted,{},1.3157894736842104,0.0
+home_goals_against_mean_premier,2004,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'mean'},1.463659147869674,0.0
+home_goals_against_mean_premier,2005,Baseline,Promoted,unweighted,{},1.3464912280701753,0.0
+home_goals_against_mean_premier,2006,Ridge,Promoted & Relegated,4_season_half_life_weight,{'alpha': 1000.0},1.4604143299293086,-0.0003268409909035
+home_goals_against_mean_premier,2007,Baseline,Promoted,unweighted,{},1.3479532163742691,0.0
+home_goals_against_mean_premier,2008,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},1.4113983313178262,-0.0004056132209204
+home_goals_against_mean_premier,2009,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},1.4268054849248637,-0.0002938174359684
+home_goals_against_mean_premier,2010,Baseline,Promoted,unweighted,{},1.3586744639376218,0.0
+home_goals_against_mean_premier,2011,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},1.4325075657509352,-5.618927322244971e-05
+home_goals_against_mean_premier,2012,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},1.431882889997719,0.0003674174937372
+home_goals_against_mean_premier,2013,Ridge,Promoted & Relegated,unweighted,{'alpha': 1000.0},1.4539574837772569,0.0007853784775758
+home_goals_against_mean_premier,2014,Baseline,Promoted,unweighted,{},1.3792172739541162,0.0
+home_goals_against_mean_premier,2015,Baseline,Promoted,unweighted,{},1.3646616541353382,0.0
+home_goals_against_mean_premier,2016,Baseline,Promoted,unweighted,{},1.3707602339181286,0.0
+home_goals_against_mean_premier,2017,Baseline,Promoted,unweighted,{},1.3706140350877194,0.0
+home_goals_against_mean_premier,2018,Baseline,Promoted,unweighted,{},1.3591331269349844,0.0
+home_goals_against_mean_premier,2019,Baseline,Promoted,unweighted,{},1.3762183235867445,0.0
+home_goals_against_mean_premier,2020,Baseline,Promoted,unweighted,{},1.379501385041551,0.0
+home_goals_for_mean_premier,2002,Baseline,Promoted,unweighted,{},1.298245614035088,0.0
+home_goals_for_mean_premier,2003,Baseline,Promoted,unweighted,{},1.2631578947368425,0.0
+home_goals_for_mean_premier,2004,Baseline,Promoted,unweighted,{},1.2923976608187138,0.0
+home_goals_for_mean_premier,2005,Ridge,Promoted,1_season_half_life_weight,{'alpha': 0.3},0.0523427529830391,0.6658860438478924
+home_goals_for_mean_premier,2006,Average,Promoted,16_season_half_life_weight,{'strategy': 'median'},1.2105263157894737,0.0
+home_goals_for_mean_premier,2007,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},1.263157894736842,0.0
+home_goals_for_mean_premier,2008,Ridge,Promoted,unweighted,{'alpha': 0.3},0.5011157011806533,0.3958758846992991
+home_goals_for_mean_premier,2009,Ridge,Promoted,unweighted,{'alpha': 0.3},0.5037110299587476,0.3884457542720668
+home_goals_for_mean_premier,2010,Ridge,Promoted,unweighted,{'alpha': 0.3},0.5111859821700109,0.3748386117668663
+home_goals_for_mean_premier,2011,Ridge,Promoted,unweighted,{'alpha': 0.1},0.2175338814976044,0.5563203246937222
+home_goals_for_mean_premier,2012,Ridge,Promoted,unweighted,{'alpha': 0.1},0.2259426919037801,0.557281151433926
+home_goals_for_mean_premier,2013,Ridge,Promoted,unweighted,{'alpha': 0.3},0.3454154272256688,0.5026750519795947
+home_goals_for_mean_premier,2014,Ridge,Promoted,unweighted,{'alpha': 0.3},0.4056661606991999,0.4606835987498355
+home_goals_for_mean_premier,2015,Ridge,Promoted,unweighted,{'alpha': 0.3},0.3506323459081574,0.4875925445426137
+home_goals_for_mean_premier,2016,Ridge,Promoted,unweighted,{'alpha': 0.3},0.3887478114436484,0.4610644502248041
+home_goals_for_mean_premier,2017,Ridge,Promoted,unweighted,{'alpha': 0.3},0.3732268133898322,0.4714844607976742
+home_goals_for_mean_premier,2018,Ridge,Promoted,unweighted,{'alpha': 0.3},0.3600392742872464,0.4727387885078907
+home_goals_for_mean_premier,2019,Ridge,Promoted,unweighted,{'alpha': 0.3},0.3459899795847063,0.4807578687916869
+home_goals_for_mean_premier,2020,Ridge,Promoted,unweighted,{'alpha': 0.3},0.4139427703004041,0.4387417260794031
+home_redCards_against_mean_premier,2002,Baseline,Promoted,unweighted,{},0.1403508771929824,0.0
+home_redCards_against_mean_premier,2003,Baseline,Promoted,unweighted,{},0.1491228070175438,0.0
+home_redCards_against_mean_premier,2004,Average,Promoted,unweighted,{'strategy': 'median'},0.1052631578947368,0.0
+home_redCards_against_mean_premier,2005,Ridge,Promoted,unweighted,{'alpha': 0.0001},0.1171978768526271,0.1359622998710223
+home_redCards_against_mean_premier,2006,Ridge,Promoted,unweighted,{'alpha': 0.0001},0.1215157628573665,0.1249637393420671
+home_redCards_against_mean_premier,2007,Ridge,Promoted,unweighted,{'alpha': 0.0001},0.1064197440094362,0.1827352665021003
+home_redCards_against_mean_premier,2008,Ridge,Promoted,1_season_half_life_weight,{'alpha': 0.0001},0.0363828458429233,0.4251154472803066
+home_redCards_against_mean_premier,2009,Average,Promoted,unweighted,{'strategy': 'median'},0.1052631578947368,0.0
+home_redCards_against_mean_premier,2010,Average,Promoted,unweighted,{'strategy': 'median'},0.1052631578947368,0.0
+home_redCards_against_mean_premier,2011,Baseline,Promoted,unweighted,{},0.1280701754385964,0.0
+home_redCards_against_mean_premier,2012,Baseline,Promoted,unweighted,{},0.124401913875598,0.0
+home_redCards_against_mean_premier,2013,Baseline,Promoted,unweighted,{},0.1198830409356724,0.0
+home_redCards_against_mean_premier,2014,Baseline,Promoted,unweighted,{},0.1255060728744939,0.0
+home_redCards_against_mean_premier,2015,Baseline,Promoted,unweighted,{},0.1240601503759398,0.0
+home_redCards_against_mean_premier,2016,Baseline,Promoted,unweighted,{},0.1204678362573098,0.0
+home_redCards_against_mean_premier,2017,Average,Promoted,4_season_half_life_weight,{'strategy': 'median'},0.1052631578947368,0.0
+home_redCards_against_mean_premier,2018,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},0.0526315789473684,0.0
+home_redCards_against_mean_premier,2019,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},0.0526315789473684,0.0
+home_redCards_against_mean_premier,2020,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},0.0526315789473684,0.0
+home_redCards_for_mean_premier,2002,Baseline,Promoted,unweighted,{},0.1578947368421052,0.0
+home_redCards_for_mean_premier,2003,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0588805977813543,0.3374477506173093
+home_redCards_for_mean_premier,2004,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},0.0199099618967467,0.4470375846339859
+home_redCards_for_mean_premier,2005,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.0001},0.0378011078910877,0.4750585451359171
+home_redCards_for_mean_premier,2006,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0562129055487272,0.2564936262667253
+home_redCards_for_mean_premier,2007,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0531511278383072,0.2184000507116414
+home_redCards_for_mean_premier,2008,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0509151915931349,0.2170118790996193
+home_redCards_for_mean_premier,2009,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0582408699492024,0.1776085197826704
+home_redCards_for_mean_premier,2010,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},0.0692366929841872,0.0250152459607477
+home_redCards_for_mean_premier,2011,Ridge,Promoted & Relegated,unweighted,{'alpha': 1.0},0.0707175440366631,0.0277257061531843
+home_redCards_for_mean_premier,2012,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.1},0.066699022946437,0.1002639870418543
+home_redCards_for_mean_premier,2013,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.3},0.0704122211283192,0.0667898540315625
+home_redCards_for_mean_premier,2014,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.1},0.0638362374658984,0.1163108974856735
+home_redCards_for_mean_premier,2015,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.1},0.0621648106853592,0.1041314365585212
+home_redCards_for_mean_premier,2016,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.058685691885397,0.1419168784830745
+home_redCards_for_mean_premier,2017,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0569496136040737,0.149248052302864
+home_redCards_for_mean_premier,2018,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0572202819656348,0.1560267043400112
+home_redCards_for_mean_premier,2019,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0525839279545378,0.1898845185057994
+home_redCards_for_mean_premier,2020,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.0534468765899531,0.1818244054015399
+home_shotsOnTarget_against_mean_premier,2002,Baseline,Promoted,unweighted,{},4.614035087719298,0.0
+home_shotsOnTarget_against_mean_premier,2003,Baseline,Promoted,unweighted,{},4.824561403508771,0.0
+home_shotsOnTarget_against_mean_premier,2004,Average,Promoted & Relegated,unweighted,{'strategy': 'mean'},5.192982456140351,0.0
+home_shotsOnTarget_against_mean_premier,2005,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},3.1175795522531,0.6006764258660716
+home_shotsOnTarget_against_mean_premier,2006,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},5.7368421052631575,0.0
+home_shotsOnTarget_against_mean_premier,2007,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},5.631578947368421,0.0
+home_shotsOnTarget_against_mean_premier,2008,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},6.2631578947368425,0.0
+home_shotsOnTarget_against_mean_premier,2009,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},5.947368421052632,0.0
+home_shotsOnTarget_against_mean_premier,2010,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},6.526315789473684,0.0
+home_shotsOnTarget_against_mean_premier,2011,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},6.526315789473684,0.0
+home_shotsOnTarget_against_mean_premier,2012,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},6.842105263157895,0.0
+home_shotsOnTarget_against_mean_premier,2013,Ridge,Promoted & Relegated,4_season_half_life_weight,{'alpha': 1.0},3.135406122766392,0.764071803611682
+home_shotsOnTarget_against_mean_premier,2014,Ridge,Promoted,unweighted,{'alpha': 0.0001},2.5335783040558906,0.8088658821524594
+home_shotsOnTarget_against_mean_premier,2015,Ridge,Promoted,unweighted,{'alpha': 0.0001},2.1871769152368774,0.8786944562992962
+home_shotsOnTarget_against_mean_premier,2016,Ridge,Promoted,unweighted,{'alpha': 0.0001},1.837709766626432,0.9437184251729436
+home_shotsOnTarget_against_mean_premier,2017,Ridge,Promoted,unweighted,{'alpha': 0.0001},1.8989620229153557,0.9286072302582578
+home_shotsOnTarget_against_mean_premier,2018,Ridge,Promoted,8_season_half_life_weight,{'alpha': 0.01},1.338652289110641,1.034309022102517
+home_shotsOnTarget_against_mean_premier,2019,Ridge,Promoted,unweighted,{'alpha': 0.0001},1.821373215098955,0.9436046696266268
+home_shotsOnTarget_against_mean_premier,2020,Ridge,Promoted,16_season_half_life_weight,{'alpha': 0.0001},1.5753480522084824,0.9824604878851813
+home_shotsOnTarget_for_mean_premier,2002,Baseline,Promoted,unweighted,{},5.157894736842105,0.0
+home_shotsOnTarget_for_mean_premier,2003,Ridge,Promoted,unweighted,{'alpha': 10.0},3.902118690918708,0.2522355853899579
+home_shotsOnTarget_for_mean_premier,2004,Baseline,Promoted,unweighted,{},5.894736842105264,0.0
+home_shotsOnTarget_for_mean_premier,2005,Baseline,Promoted,unweighted,{},5.785087719298247,0.0
+home_shotsOnTarget_for_mean_premier,2006,Baseline,Promoted,unweighted,{},5.810526315789474,0.0
+home_shotsOnTarget_for_mean_premier,2007,Baseline,Promoted,unweighted,{},5.783625730994152,0.0
+home_shotsOnTarget_for_mean_premier,2008,Baseline,Promoted,unweighted,{},5.80701754385965,0.0
+home_shotsOnTarget_for_mean_premier,2009,Ridge,Promoted,unweighted,{'alpha': 10.0},3.2773359524877854,0.3721695996721346
+home_shotsOnTarget_for_mean_premier,2010,Ridge,Promoted,unweighted,{'alpha': 10.0},3.3422219074067936,0.3694009798116908
+home_shotsOnTarget_for_mean_premier,2011,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},1.4922059150165603,0.6942466723070095
+home_shotsOnTarget_for_mean_premier,2012,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},1.841089169538053,0.6544714549504618
+home_shotsOnTarget_for_mean_premier,2013,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},0.8753795561359867,0.8016665102673681
+home_shotsOnTarget_for_mean_premier,2014,Ridge,Promoted,unweighted,{'alpha': 3.0},2.125051522003898,0.5536193388796501
+home_shotsOnTarget_for_mean_premier,2015,Ridge,Promoted,unweighted,{'alpha': 3.0},1.5636651013268468,0.6259564507928926
+home_shotsOnTarget_for_mean_premier,2016,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},-0.3236512472320125,0.8098719881048537
+home_shotsOnTarget_for_mean_premier,2017,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},-0.5755200996534651,0.8352458036128361
+home_shotsOnTarget_for_mean_premier,2018,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},-0.9771577391995052,0.8852836899878439
+home_shotsOnTarget_for_mean_premier,2019,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},0.2624157588953593,0.6924007633336023
+home_shotsOnTarget_for_mean_premier,2020,Ridge,Promoted,2_season_half_life_weight,{'alpha': 10.0},0.5894894738525407,0.6328504564456523
+home_shots_against_mean_premier,2002,Baseline,Promoted,unweighted,{},9.719298245614036,0.0
+home_shots_against_mean_premier,2003,Baseline,Promoted,unweighted,{},9.385964912280704,0.0
+home_shots_against_mean_premier,2004,Ridge,Promoted,unweighted,{'alpha': 10.0},8.722571131308092,0.160358644528328
+home_shots_against_mean_premier,2005,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},5.8157998974467855,0.6147914231074428
+home_shots_against_mean_premier,2006,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},10.789473684210526,0.0
+home_shots_against_mean_premier,2007,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},10.947368421052632,0.0
+home_shots_against_mean_premier,2008,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},6.575236845321135,0.533064435247388
+home_shots_against_mean_premier,2009,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},11.894736842105264,0.0
+home_shots_against_mean_premier,2010,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},12.263157894736842,0.0
+home_shots_against_mean_premier,2011,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},11.736842105263158,0.0
+home_shots_against_mean_premier,2012,Average,Promoted,1_season_half_life_weight,{'strategy': 'median'},12.526315789473683,0.0
+home_shots_against_mean_premier,2013,Ridge,Promoted & Relegated,8_season_half_life_weight,{'alpha': 0.0001},5.9954016980140885,0.6712542690828434
+home_shots_against_mean_premier,2014,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'median'},13.63157894736842,0.0
+home_shots_against_mean_premier,2015,Average,Promoted & Relegated,1_season_half_life_weight,{'strategy': 'median'},13.63157894736842,0.0
+home_shots_against_mean_premier,2016,Ridge,Promoted & Relegated,4_season_half_life_weight,{'alpha': 0.0001},7.53310740558926,0.5282964955653627
+home_shots_against_mean_premier,2017,Ridge,Promoted & Relegated,2_season_half_life_weight,{'alpha': 0.0001},9.959906579145066,0.3066483106764167
+home_shots_against_mean_premier,2018,Ridge,Promoted & Relegated,4_season_half_life_weight,{'alpha': 0.0001},7.70401592489841,0.5209553630381858
+home_shots_against_mean_premier,2019,Ridge,Promoted & Relegated,4_season_half_life_weight,{'alpha': 0.0001},8.42202702745269,0.4406494386766682
+home_shots_against_mean_premier,2020,Ridge,Promoted & Relegated,4_season_half_life_weight,{'alpha': 0.0001},8.53441879853889,0.4256681748443758
+home_shots_for_mean_premier,2002,Baseline,Promoted,unweighted,{},11.719298245614036,0.0
+home_shots_for_mean_premier,2003,Ridge,Promoted,unweighted,{'alpha': 1.0},0.9627435648270576,0.7616580983327845
+home_shots_for_mean_premier,2004,Baseline,Promoted,unweighted,{},11.497076023391813,0.0
+home_shots_for_mean_premier,2005,Baseline,Promoted,unweighted,{},11.228070175438596,0.0
+home_shots_for_mean_premier,2006,Baseline,Promoted,unweighted,{},11.252631578947367,0.0
+home_shots_for_mean_premier,2007,Baseline,Promoted,unweighted,{},11.2046783625731,0.0
+home_shots_for_mean_premier,2008,Baseline,Promoted,unweighted,{},11.177944862155387,0.0
+home_shots_for_mean_premier,2009,Ridge,Promoted,unweighted,{'alpha': 1.0},4.423194743001908,0.5215189265063148
+home_shots_for_mean_premier,2010,Ridge,Promoted,unweighted,{'alpha': 1.0},4.564388595783081,0.5098932329968707
+home_shots_for_mean_premier,2011,Ridge,Promoted,unweighted,{'alpha': 1.0},3.8090453778292366,0.5796640771712555
+home_shots_for_mean_premier,2012,Ridge,Promoted,unweighted,{'alpha': 1.0},3.495453699923223,0.6095143745668442
+home_shots_for_mean_premier,2013,Ridge,Promoted,4_season_half_life_weight,{'alpha': 1.0},2.228966255477145,0.7216485112346742
+home_shots_for_mean_premier,2014,Ridge,Promoted,4_season_half_life_weight,{'alpha': 1.0},2.250901194648417,0.7196867361506027
+home_shots_for_mean_premier,2015,Ridge,Promoted,4_season_half_life_weight,{'alpha': 1.0},2.6394440020447067,0.6925617101208947
+home_shots_for_mean_premier,2016,Ridge,Promoted,unweighted,{'alpha': 1.0},4.347243282543875,0.5479808307379327
+home_shots_for_mean_premier,2017,Ridge,Promoted,unweighted,{'alpha': 1.0},5.151862619693541,0.4818720218154216
+home_shots_for_mean_premier,2018,Ridge,Promoted,2_season_half_life_weight,{'alpha': 1.0},8.180611907446227,0.2465876223019151
+home_shots_for_mean_premier,2019,Ridge,Promoted,unweighted,{'alpha': 3.0},5.419087047171745,0.4622819148748986
+home_shots_for_mean_premier,2020,Ridge,Promoted,unweighted,{'alpha': 3.0},5.532051150624791,0.4519790053216767
+home_yellowCards_against_mean_premier,2002,Baseline,Promoted,unweighted,{},1.912280701754386,0.0
+home_yellowCards_against_mean_premier,2003,Ridge,Promoted & Relegated,unweighted,{'alpha': 300.0},1.7106833123344494,0.0022976284830239
+home_yellowCards_against_mean_premier,2004,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 1000.0},1.601963695012056,0.0019154333802101
+home_yellowCards_against_mean_premier,2005,Baseline,Promoted,unweighted,{},1.758771929824562,0.0
+home_yellowCards_against_mean_premier,2006,Baseline,Promoted,unweighted,{},1.7263157894736845,0.0
+home_yellowCards_against_mean_premier,2007,Ridge,Promoted & Relegated,unweighted,{'alpha': 0.0001},0.6078752911253562,0.6131730466597947
+home_yellowCards_against_mean_premier,2008,Average,Promoted & Relegated,unweighted,{'strategy': 'median'},1.5789473684210529,0.0
+home_yellowCards_against_mean_premier,2009,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},1.5263157894736843,0.0
+home_yellowCards_against_mean_premier,2010,Average,Promoted,2_season_half_life_weight,{'strategy': 'median'},1.4736842105263157,0.0
+home_yellowCards_against_mean_premier,2011,Baseline,Promoted,unweighted,{},1.6719298245614038,0.0
+home_yellowCards_against_mean_premier,2012,Ridge,Promoted & Relegated,1_season_half_life_weight,{'alpha': 0.3},0.6695768558530015,0.6939851528738294
+home_yellowCards_against_mean_premier,2013,Baseline,Promoted,unweighted,{},1.6637426900584795,0.0
+home_yellowCards_against_mean_premier,2014,Baseline,Promoted,unweighted,{},1.6504723346828614,0.0
+home_yellowCards_against_mean_premier,2015,Baseline,Promoted,unweighted,{},1.6453634085213034,0.0
+home_yellowCards_against_mean_premier,2016,Baseline,Promoted,unweighted,{},1.6257309941520466,0.0
+home_yellowCards_against_mean_premier,2017,Baseline,Promoted,unweighted,{},1.630482456140351,0.0
+home_yellowCards_against_mean_premier,2018,Baseline,Promoted,unweighted,{},1.6202270381836943,0.0
+home_yellowCards_against_mean_premier,2019,Baseline,Promoted,unweighted,{},1.6198830409356728,0.0
+home_yellowCards_against_mean_premier,2020,Baseline,Promoted,unweighted,{},1.6251154201292706,0.0
+home_yellowCards_for_mean_premier,2002,Baseline,Promoted,unweighted,{},1.333333333333333,0.0
+home_yellowCards_for_mean_premier,2003,Baseline,Promoted,unweighted,{},1.3245614035087718,0.0
+home_yellowCards_for_mean_premier,2004,Ridge,Promoted,unweighted,{'alpha': 3.0},1.389273541901547,-0.0240625639659368
+home_yellowCards_for_mean_premier,2005,Baseline,Promoted,unweighted,{},1.3070175438596492,0.0
+home_yellowCards_for_mean_premier,2006,Baseline,Promoted,unweighted,{},1.312280701754386,0.0
+home_yellowCards_for_mean_premier,2007,Baseline,Promoted,unweighted,{},1.304093567251462,0.0
+home_yellowCards_for_mean_premier,2008,Baseline,Promoted,unweighted,{},1.3308270676691731,0.0
+home_yellowCards_for_mean_premier,2009,Average,Promoted,unweighted,{'strategy': 'median'},1.4210526315789471,0.0
+home_yellowCards_for_mean_premier,2010,Average,Promoted,unweighted,{'strategy': 'median'},1.4210526315789471,0.0
+home_yellowCards_for_mean_premier,2011,Average,Promoted,unweighted,{'strategy': 'median'},1.4210526315789471,0.0
+home_yellowCards_for_mean_premier,2012,Average,Promoted,unweighted,{'strategy': 'median'},1.4210526315789471,0.0
+home_yellowCards_for_mean_premier,2013,Average,Promoted,unweighted,{'strategy': 'median'},1.368421052631579,0.0
+home_yellowCards_for_mean_premier,2014,Average,Promoted,unweighted,{'strategy': 'median'},1.368421052631579,0.0
+home_yellowCards_for_mean_premier,2015,Average,Promoted,unweighted,{'strategy': 'median'},1.368421052631579,0.0
+home_yellowCards_for_mean_premier,2016,Average,Promoted,unweighted,{'strategy': 'median'},1.368421052631579,0.0
+home_yellowCards_for_mean_premier,2017,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'median'},1.5263157894736843,0.0
+home_yellowCards_for_mean_premier,2018,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'median'},1.6842105263157894,0.0
+home_yellowCards_for_mean_premier,2019,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'median'},1.6842105263157894,0.0
+home_yellowCards_for_mean_premier,2020,Average,Promoted & Relegated,2_season_half_life_weight,{'strategy': 'median'},1.6842105263157894,0.0
