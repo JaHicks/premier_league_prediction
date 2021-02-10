@@ -33,6 +33,10 @@ data: requirements
 train_championship_transformation:
 	$(PYTHON_INTERPRETER) src/models/train_championship_transformation.py data/interim models
 
+## Transform championship match features to bring them inline with premier league values
+championship_transformation:
+	$(PYTHON_INTERPRETER) src/models/championship_transformation.py data/interim models data/processed
+
 ## Delete all compiled Python files
 clean:
 	find . -type f -name "*.py[co]" -delete
